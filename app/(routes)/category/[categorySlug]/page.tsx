@@ -12,8 +12,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 export default function Page() {
-    const params = useParams();
-    const categorySlug = useParams()?.categorySulg;
+    const {categorySlug} = useParams() ?? {};
     const { result, loading }: ResponseType = useGetCategoryProducts(categorySlug);
     const [filterMarca, setFilterMarca] = useState('')
 
