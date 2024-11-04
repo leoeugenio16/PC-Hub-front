@@ -10,7 +10,8 @@ import { ProductType } from "@/types/product";
 import { useState } from "react";
 
 import Link from "next/link";
-
+import { useRouter } from "next/router";
+ const router = useRouter()
 export default function Page() {
     const {categorySlug} = useParams() ?? {};
     const { result, loading }: ResponseType = useGetCategoryProducts(categorySlug);
@@ -37,7 +38,7 @@ export default function Page() {
                     )}
                     {filteredProducts !== null && !loading && (
                         filteredProducts.map((product: ProductType) => (
-                            <ProductCard key={product.id} product={product} router={undefined} />
+                            <ProductCard key={product.id} product={product} router={router} />
                         ))
                     )}
                     {filteredProducts !== null && !loading && filteredProducts.length == 0 && (
