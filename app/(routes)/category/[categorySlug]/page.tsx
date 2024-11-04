@@ -11,8 +11,8 @@ import { useState } from "react";
 
 import Link from "next/link";
 import { useRouter } from "next/router";
- const router = useRouter()
 export default function Page() {
+    const router = useRouter()
     const {categorySlug} = useParams() ?? {};
     const { result, loading }: ResponseType = useGetCategoryProducts(categorySlug);
     const [filterMarca, setFilterMarca] = useState('')
