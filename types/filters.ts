@@ -9,7 +9,7 @@ export type ResultFilterTypes = {
     schema: {
         attributes: {
             Marca:{
-                enum:string
+                enum:[]
             }
         }
 
