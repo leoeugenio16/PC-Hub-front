@@ -1,5 +1,6 @@
 import { Menu } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
+
 import { NavigationMenu, NavigationMenuLink } from "./ui/navigation-menu";
 import React from "react";
 import { cn } from "@/lib/utils";
@@ -47,7 +48,7 @@ const ItemsMenuMobile = () => {
             <PopoverContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                     {components.map((component) => (
-                        <NavigationMenu>
+                        <NavigationMenu key={component.title}>
 
                             <ListItem
                                 key={component.title}
