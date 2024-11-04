@@ -6,7 +6,6 @@ import SkeletonProduct from "./components/skeleton-product";
 import CarouselProduct from "./components/carousel-product";
 import InfoProduct from "./components/info-product";
 export default function Page() {
-    const params = useParams();
     const {productSlug} = useParams() ?? {};
     
     const { result }: ResponseType = useGetProductBySlug(productSlug)
