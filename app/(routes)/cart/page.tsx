@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/hooks/use-cart";
 import { formatPrice } from "@/lib/formatPrice";
@@ -7,7 +7,6 @@ import { Separator } from "@radix-ui/react-separator";
 import { initMercadoPago, Wallet } from '@mercadopago/sdk-react'
 
 import axios from 'axios'
-import { title } from 'process';
 import CartItem from './componenet/cart-item';
 const YOUR_PUBLIC_KEY = `${process.env.NEXT_PUBLIC_MP_KEY}`;
 

@@ -5,13 +5,14 @@ import { useGetProductField } from "@/api/getProductField";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { FilterTypes } from "@/types/filters";
+import { ProductType } from "@/types/product";
 type filterMarcaProps = {
     setFilterMarca : (marca:string) => void
     products: ProductType[]
 }
 
 const FilterMarca = (props : filterMarcaProps) =>{
-    const {setFilterMarca, products} = props
+    const {setFilterMarca} = props
     const {result,loading}: FilterTypes = useGetProductField();
     
 

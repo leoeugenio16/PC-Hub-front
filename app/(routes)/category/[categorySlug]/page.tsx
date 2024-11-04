@@ -2,15 +2,13 @@
 import { useGetCategoryProducts } from "@/api/getCategoryProduct";
 import { useParams, useRouter } from "next/navigation";
 import { ResponseType } from "@/types/response";
-import { Result } from "postcss";
 import { Separator } from "@/components/ui/separator";
 import FilterControlsCategory from "./components/filters-controls-category";
 import SkeletonSchema from "@/components/skeletonSchema";
 import ProductCard from "./components/product-card";
 import { ProductType } from "@/types/product";
 import { useState } from "react";
-import FilterMarca from "./components/filter-marca";
-import { Console } from "console";
+
 import Link from "next/link";
 
 export default function page() {
