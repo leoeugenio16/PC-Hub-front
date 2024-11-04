@@ -8,7 +8,6 @@ import { FilterTypes } from "@/types/filters";
 import { ProductType } from "@/types/product";
 type filterMarcaProps = {
     setFilterMarca : (marca:string) => void
-    products: ProductType[]
 }
 
 const FilterMarca = (props : filterMarcaProps) =>{
