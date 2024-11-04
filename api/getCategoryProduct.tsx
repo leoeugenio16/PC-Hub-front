@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from "react"
 
-export function useGetCategoryProducts(slug:string | string[]) {
+export function useGetCategoryProducts(slug:string | string[] | undefined) {
 
     const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products?populate=*&filters[categoria][slug][$eq]=${slug}`
     const [result,setResult]=useState(null)

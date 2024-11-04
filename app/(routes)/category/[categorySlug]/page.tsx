@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export default function Page() {
     const params = useParams();
-    const { categorySlug } = params;
+    const categorySlug = useParams()?.categorySulg;
     const { result, loading }: ResponseType = useGetCategoryProducts(categorySlug);
     const [filterMarca, setFilterMarca] = useState('')
 
