@@ -1,6 +1,5 @@
 import { Menu } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
-import { Button } from "./ui/button";
 import { NavigationMenu, NavigationMenuLink } from "./ui/navigation-menu";
 import React from "react";
 import { cn } from "@/lib/utils";

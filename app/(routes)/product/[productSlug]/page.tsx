@@ -5,7 +5,7 @@ import { useParams } from "next/navigation"
 import SkeletonProduct from "./components/skeleton-product";
 import CarouselProduct from "./components/carousel-product";
 import InfoProduct from "./components/info-product";
-export default function page() {
+export default function Page() {
     const params = useParams();
     const {productSlug} = params
     

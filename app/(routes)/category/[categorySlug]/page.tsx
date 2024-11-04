@@ -16,7 +16,6 @@ export default function Page() {
     const { categorySlug } = params;
     const { result, loading }: ResponseType = useGetCategoryProducts(categorySlug);
     const [filterMarca, setFilterMarca] = useState('')
-    const router = useRouter();
 
     const filteredProducts = result !== null && !loading && (
         filterMarca == '' ? result : result.filter((product: ProductType) => product.Marca === filterMarca)
