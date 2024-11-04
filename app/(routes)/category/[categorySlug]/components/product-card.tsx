@@ -4,12 +4,13 @@ import { formatPrice } from "@/lib/formatPrice";
 import { ProductType } from "@/types/product";
 import { Expand, ShoppingCart } from "lucide-react";
 import Link from "next/link";
+import { NextRouter } from "next/router";
 
 
 
 type ProductCardProps = {
     product: ProductType
-    router: any
+    router: NextRouter
 }
 
 const ProductCard = (props: ProductCardProps) =>{

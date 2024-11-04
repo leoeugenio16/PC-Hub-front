@@ -11,7 +11,7 @@ import { useState } from "react";
 
 import Link from "next/link";
 
-export default function page() {
+export default function Page() {
     const params = useParams();
     const { categorySlug } = params;
     const { result, loading }: ResponseType = useGetCategoryProducts(categorySlug);
